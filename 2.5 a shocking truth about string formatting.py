@@ -24,6 +24,17 @@ def literal_string_maths():
 def literal_strings_as_arguments(name, question):
     print(f"Alright {name}, {question}")
 
+def template_string(input_name):
+    from string import Template
+    t = Template("Hey $name")
+    print(t.substitute(name=input_name))
+
+def template_strings():
+    from string import Template
+    t = "Hey $name, $question"
+    Template(t).substitute(name="Howdy", question="Yeehaw")
+
+
 try:
     select_function = int(input("Vælg en funktion: "))
 except ValueError:
@@ -45,9 +56,9 @@ elif select_function == 7:
 elif select_function == 8:
     literal_strings_as_arguments("Biblebob", "Where are the bodies buried?")
 elif select_function == 9:
-    pass
+    template_string("Joakim")
 elif select_function == 10:
-    pass
+    template_strings()
 elif select_function == 11:
     pass
 elif select_function == 12:
