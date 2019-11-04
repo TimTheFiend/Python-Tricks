@@ -29,6 +29,7 @@ def greet1():
 
 #endregion
 
+#region Useful decorator example
 def uppercase(func):
     def wrapper():
         original_result = func()
@@ -41,3 +42,22 @@ def greet2():
     return "howdy"
 
 print(greet2())
+#endregion
+
+def strong(func):
+    def wrapper():
+        return "<strong>" + func() + "</strong>"
+    return wrapper
+
+def emphasis(func):
+    def wrapper():
+        return "<em>" + func() + "</em>"
+    return wrapper
+
+@strong
+@emphasis
+def greet3():
+    return "hello"
+
+print(greet3())
+## side 82
