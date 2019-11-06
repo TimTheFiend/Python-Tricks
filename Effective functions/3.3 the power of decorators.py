@@ -3,12 +3,10 @@ Decorators "decorate" or "wrap" another function and let you execute code before
 decorators allows you to define reusable building blocks that can change or extend the behavior of other functions.
 And, they let you do that without permanently modifying the wrapped function itself.
 The fucntions behavior changes only when it's decorated.
-"""
-"""
+
 Putting an @null_decorator line in front of the function definition is the same as defining the function 
 and then running through the decorator.
-"""
-"""
+
 Instead of explicitly calling null_decorator on greet and then reassigning the greet variable,
 you can use python's @ syntax for decorating a function more conveniently:
 """
