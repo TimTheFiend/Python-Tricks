@@ -54,6 +54,10 @@ class Rectangle:
 
 rect = Rectangle(Point(0, 1), Point(5, 6))
 srect = copy.copy(rect)
-print(rect, srect) # Rectangle(Point(0, 1), Point(5, 6)) | Rectangle(Point(0, 1), Point(5, 6))
-print(rect is srect) # False
+# print(rect, srect) # Rectangle(Point(0, 1), Point(5, 6)) | Rectangle(Point(0, 1), Point(5, 6))
+# print(rect is srect) # False
 
+drect = copy.deepcopy(srect)
+drect.topleft.x = 222
+print(drect) # Rectangle(Point(222, 1), Point(5, 6))
+print(rect)  # Rectangle(Point(0, 1), Point(5, 6))
