@@ -61,4 +61,3 @@ def greet3():
 
 print(greet3())
 ## side 82
-where am i currently?
