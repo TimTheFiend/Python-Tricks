@@ -33,7 +33,7 @@ class NameTooCuteError(BaseValidationError):
 try:
     validate("audi")
 except BaseValidationError as err:
-    """handle_validation_error er psudo kode men kan bruges til at handle exceptions"""
+    """handle_validation_error er psuedo kode men kan bruges til at handle exceptions"""
     handle_validation_error(err)
 
 #endregion
