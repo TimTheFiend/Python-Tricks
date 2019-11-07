@@ -40,3 +40,25 @@ print(*my_car)                     # output: red 1312
 #endregion
 
 #region subclassing
+"""Since they're built on top of regular python classes you can even add methods to a namedtuple object.
+For example, you can extend a numedtuple's class like any other class and add methods and new properties to it that way.
+Here's an example.
+"""
+from collections import namedtuple
+
+Car = namedtuple('Car', 'color mileage')
+
+class MyCarWithmethods(Car):
+    def hexcolor(self):
+        if self.color == 'red':
+            return '#ff0000'
+        else:
+            return '#000000'
+
+c = MyCarWithmethods('red', 1312)
+print(c.hexcolor())
+
+"""However, this might be a little clunky.
+It might be worth doing if you want a class with immutable properties, but it's also easy to shoot yourself in the foot here.
+"""
+#endregion
