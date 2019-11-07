@@ -72,3 +72,25 @@ car2.mileage = 1312
 print(car2.mileage)
 #endregion
 
+#region collections.namedtuple
+"""Namedtuple objects are implemented as regular python classes internally.
+When it coems to memory usage, they are also 'better' than regular classes.
+"""
+from collections import namedtuple
+from sys import getsizeof
+
+p1 = namedtuple('Point', 'x y z')(1, 2, 3)
+p2 = (1, 2, 3)
+
+print(getsizeof(p1)) # 64
+print(getsizeof(p2)) # 64
+
+Car = namedtuple('Car' , 'color mileage automatic')
+car1 = Car('red', 3812.4, True)
+print(car1)             # Car(color='red', mileage=3812.4, automatic=True)
+print(car1.mileage)     # 3812.4
+"""Is immutable
+"""
+
+#endregion
+
