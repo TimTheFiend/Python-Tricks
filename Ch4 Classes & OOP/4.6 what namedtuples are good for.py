@@ -60,5 +60,8 @@ print(c.hexcolor())
 
 """However, this might be a little clunky.
 It might be worth doing if you want a class with immutable properties, but it's also easy to shoot yourself in the foot here.
+
+For example, adding a new immutable field is tricky because of how namedtuples are structured internally.
+The easiest way to create hierarchies of namedtuples is to use the base tuple's _fields property:
 """
 #endregion
