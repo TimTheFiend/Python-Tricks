@@ -40,10 +40,12 @@ print(*my_car)                     # output: red 1312
 #endregion
 
 #region subclassing
+#region comment
 """Since they're built on top of regular python classes you can even add methods to a namedtuple object.
 For example, you can extend a numedtuple's class like any other class and add methods and new properties to it that way.
 Here's an example.
 """
+#endregion
 from collections import namedtuple
 
 Car = namedtuple('Car', 'color mileage')
@@ -57,11 +59,29 @@ class MyCarWithmethods(Car):
 
 c = MyCarWithmethods('red', 1312)
 print(c.hexcolor())
-
+#region comment
 """However, this might be a little clunky.
 It might be worth doing if you want a class with immutable properties, but it's also easy to shoot yourself in the foot here.
 
 For example, adding a new immutable field is tricky because of how namedtuples are structured internally.
 The easiest way to create hierarchies of namedtuples is to use the base tuple's _fields property:
 """
+#endregion
+ElectricCar = namedtuple('ElectricCar', Car._fields + ('charge',))
+print(ElectricCar('red', 1312, 'Yes'))  # Output: ElectricCar(color='red', mileage=1312, charge='Yes')
+"""Each namedtuple instance also provies a few more helper methods you might find useful.
+Their names all start with a single underscore character (_) which usually signals that a method
+or property is "private" and not part of the stable public interface of a class or module.
+With namedtuples, the underscore naming indicates they are a part of namedtuple's public interface.
+"""
+# returns the content of a namedtuple as a dictionary.
+print(ElectricCar('red', 1312, 'Yes')._asdict()) # Output: {'color': 'red', 'mileage': 1312, 'charge': 'Yes'}
+
+my_car = Car('red', 1312)
+print(my_car._replace(color='blue')) # Output: Car(color='blue', mileage=1312) | SHALLOW COPY
+print(my_car) # Output: Car(color='red', mileage=1312)
+
+print(Car._make(['red', 1312])) # Output: Car(color='red', mileage=1312)
+
+
 #endregion
