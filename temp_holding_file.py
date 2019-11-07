@@ -43,5 +43,26 @@ except KeyError:
 #endregion
 
 #region types.MappingProxyType
+"""
+This can be helpful if you'd like to return a dictionary
+carrying internal state from a class or module,
+while discouraging write access to this object.
+Using mappingproxytype allows you to put these restrictions in place
+without first having to create a full copy of the dictionary.
+""" 
+from types import MappingProxyType
 
+writable = {'one': 1, 'two': 2}
+read_only = MappingProxyType(writable)
+
+print(read_only['one'])
+try:
+    read_only['one'] = 23 # "Mappingproxy" object does not support item assignment
+
+except TypeError:
+    print('"Mappingproxy" object does not support item assignment')
+writable['one'] = 42
+print(read_only) # {'one': 42, 'two': 2}
 #endregion
+
+
