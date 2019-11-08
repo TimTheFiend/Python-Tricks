@@ -94,3 +94,7 @@ print(car1.mileage)     # 3812.4
 
 #endregion
 
+#region typing.NamedTuple
+
+#endregion
+
