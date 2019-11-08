@@ -95,6 +95,33 @@ print(car1.mileage)     # 3812.4
 #endregion
 
 #region typing.NamedTuple
+"""Younger sibling of the collections.namedtuple"""
+from typing import NamedTuple
+
+class Car(NamedTuple):
+    color: str
+    mileage: float
+    automatic: bool
+
+car1 = Car('red', 1312, True)
+# Instances have a nice repr:
+print(car1)         # Car(color='red', mileage=1312, automatic=True)
+print(car1.mileage) # 1312
+
+# Fields are immutable:
+try:
+    car1.mileage = 12
+except AttributeError:
+    print("type.NamedTuple")
+
+# Type annotations are not enforced without a separate type checking tool like mypy
+print(Car('red', 'NOT_A_FLOAT', 99)) # Car(color='red', mileage='NOT_A_FLOAT', automatic=99)
+
 
 #endregion
 
+#region
+
+
+
+#endregion
