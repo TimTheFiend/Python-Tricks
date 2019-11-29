@@ -6,44 +6,55 @@ Maybe go through it and add some notes
 <details><summary>Files</summary>
 <p>
 
-- [2.1 assert](pyFiles/2.1 assert.py)
-- [2.2 complacent comma placement](pyFiles/2.2 complacent comma placement.py)
-- [2.3 context managers](pyFiles/2.3 context managers.py)
-- [2.4 underscores, dunders, and more](pyFiles/2.4 underscores, dunders, and more.py)
-- [2.5 a shocking truth about string formatting](pyFiles/2.5 a shocking truth about string formatting.py)
-- [3.1a function](pyFiles/3.1a function.py)
-- [3.1b functions can be nested](pyFiles/3.1b functions can be nested.py)
-- [3.2 lambdas are single-expression functions](pyFiles/3.2 lambdas are single-expression functions.py)
-- [3.3a the power of decorators](pyFiles/3.3a the power of decorators.py)
-- [3.3b decorating functions that accepts arguments](pyFiles/3.3b decorating functions that accepts arguments.py)
-- [3.3c how to write debuggable decorators](pyFiles/3.3c how to write debuggable decorators.py)
-- [3.4 fun with args and kwargs](pyFiles/3.4 fun with args and kwargs.py)
-- [3.5 function argument unpacking](pyFiles/3.5 function argument unpacking.py)
-- [3.6 nothing to return here](pyFiles/3.6 nothing to return here.py)
-- [4.1 object comparisons is vs ==](pyFiles/4.1 object comparisons is vs ==.py)
-- [4.2a string conversion or every class needs a dunder repr](pyFiles/4.2a string conversion or every class needs a dunder repr.py)
-- [4.2b str vs repr](pyFiles/4.2b str vs repr.py)
-- [4.3 Defining your own exception classes](pyFiles/4.3 Defining your own exception classes.py)
-- [4.4 cloning objects for fun and profit](pyFiles/4.4 cloning objects for fun and profit.py)
-- [4.5 abstract base classes keep inheritance in check](pyFiles/4.5 abstract base classes keep inheritance in check.py)
-- [4.6 what namedtuples are good for](pyFiles/4.6 what namedtuples are good for.py)
-- [4.7 class vs instance variable pitfalls](pyFiles/4.7 class vs instance variable pitfalls.py)
-- [4.8 instance class and static methods](pyFiles/4.8 instance class and static methods.py)
-- [5.1 dictionaries maps and hashtables](pyFiles/5.1 dictionaries maps and hashtables.py)
-- [5.2 array data structure](pyFiles/5.2 array data structure.py)
-- [5.3 records structs and data transfer objects](pyFiles/5.3 records structs and data transfer objects.py)
-- [5.4 sets and multisets](pyFiles/5.4 sets and multisets.py)
-- [6.1 writing pythonic loops](pyFiles/6.1 writing pythonic loops.py)
-- [6.2 comprehending comprehensions](pyFiles/6.2 comprehending comprehensions.py)
-- [6.3 list slicing tricks and the sushi operator](pyFiles/6.3 list slicing tricks and the sushi operator.py)
-- [6.4 beautiful iterators](pyFiles/6.4 beautiful iterators.py)
-- [6.5 generators are simplified iterators](pyFiles/6.5 generators are simplified iterators.py)
-- [6.6 generator expressions](pyFiles/6.6 generator expressions.py)
-- [6.7 Iterator Chains](pyFiles/6.7 Iterator Chains.py)
-- [7.1 Dictionary Default Values](pyFiles/7.1 Dictionary Default Values.py)
-- [7.2 sorting dictionaries for fun and profit](pyFiles/7.2 sorting dictionaries for fun and profit.py)
-- [7.3 Emulating switchcase](pyFiles/7.3 Emulating switchcase.py)
-- [7.6 dictionary pretty-printing](pyFiles/7.6 dictionary pretty-printing.py)
+2. Chapter 2:
+    - [Assert](pyFiles/2.1_assert.py)
+    - [Complacent Comma Placement](pyFiles/2.2_complacent_comma_placement.py)
+    - [Context Managers](pyFiles/2.3_context_managers.py)
+    - [Underscores, Dunders, and more.](pyFiles/2.4_underscores,_dunders,_and_more.py)
+    - [A Shocking Truth About String Formatting](pyFiles/2.5_a_shocking_truth_about_string_formatting.py)
+3.  Chapter 3:
+    - [Functions As Objects](pyFiles/3.1a_function.py)
+    - [Functions Can Be Nested](pyFiles/3.1b_functions_can_be_nested.py)
+    - [Lambdas Are Single Expression Functions](pyFiles/3.2_lambdas_are_single-expression_functions.py)
+    - [The Power of Decorators](pyFiles/3.3a_the_power_of_decorators.py)
+    - [Decorating Functions That Accepts Arguments](pyFiles/3.3b_decorating_functions_that_accepts_arguments.py)
+    - [How To Write Debuggable Decorators](pyFiles/3.3c_how_to_write_debuggable_decorators.py)
+    - [Fun with *args, and **kwargs](pyFiles/3.4_fun_with_args_and_kwargs.py)
+    - [Functions Argument Unpacking](pyFiles/3.5_function_argument_unpacking.py)
+    - [Nothing To Return Here](pyFiles/3.6_nothing_to_return_here.py)
+
+4. Chapter 4:
+    - [Object Comparison: is VS ==](pyFiles/4.1_object_comparisons_is_vs_==.py)
+    - [String Conversion or Every Class Needs A Dunder](pyFiles/4.2a_string_conversion_or_every_class_needs_a_dunder_repr.py)
+    - [str VS repr](pyFiles/4.2b_str_vs_repr.py)
+    - [Defining Your Own Exception Classes](pyFiles/4.3_Defining_your_own_exception_classes.py)
+    - [Cloning Objects For Fun & Profit](pyFiles/4.4_cloning_objects_for_fun_and_profit.py)
+    - [Abstract Base Classes Keep Inheritance In Check](pyFiles/4.5_abstract_base_classes_keep_inheritance_in_check.py)
+    - [What namedtuples Are Good For](pyFiles/4.6_what_namedtuples_are_good_for.py)
+    - [Class VS Instance Variable Pitfalls](pyFiles/4.7_class_vs_instance_variable_pitfalls.py)
+    - [Instance Class and Static Methods](pyFiles/4.8_instance_class_and_static_methods.py)
+
+5. Chapter 5:
+    - [Dictionaries Maps and Hashtables](pyFiles/5.1_dictionaries_maps_and_hashtables.py)
+    - [Array Data Structure](pyFiles/5.2_array_data_structure.py)
+    - [Records Structs and Data Transfer Objects](pyFiles/5.3_records_structs_and_data_transfer_objects.py)
+    - [Sets and Multisets](pyFiles/5.4_sets_and_multisets.py)
+
+6. Chapter 6:
+    - [Writing Pythonic Loops](pyFiles/6.1_writing_pythonic_loops.py)
+    - [Comprehending Comprehensions](pyFiles/6.2_comprehending_comprehensions.py)
+    - [List Slicing Tricks and the Sushi Operator](pyFiles/6.3_list_slicing_tricks_and_the_sushi_operator.py)
+    - [Beautiful Iterators](pyFiles/6.4_beautiful_iterators.py)
+    - [Generators are Simplified Iterators](pyFiles/6.5_generators_are_simplified_iterators.py)
+    - [Generator Expressions](pyFiles/6.6_generator_expressions.py)
+    - [Iterator Chains](pyFiles/6.7_Iterator_Chains.py)
+
+7. Chapter 7:
+    - [Dictionary Default Values](pyFiles/7.1_Dictionary_Default_Values.py)
+    - [Sorting Dictionaries For Fun & Profit](pyFiles/7.2_sorting_dictionaries_for_fun_and_profit.py)
+    - [Emulating Switchcase](pyFiles/7.3_Emulating_switchcase.py)
+    - [Dictionary Pretty Printing](pyFiles/7.6_dictionary_pretty-printing.py)
+
 
 </p>
 </details>
